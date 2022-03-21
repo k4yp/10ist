@@ -2,8 +2,9 @@ const express = require("express");
 const mongoose = require("mongoose");
 const app = express();
 
-app.get('/', (request,responce) =>{
-    responce.send('<h1>server running</h1>')
+app.get('/', (req,res) =>{
+    res.statusCode = 200;
+    res.send('server running')
 })
 
 const PORT = 5000;
