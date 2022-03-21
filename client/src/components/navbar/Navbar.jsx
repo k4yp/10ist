@@ -1,11 +1,10 @@
 import "./navbar.css"
 
-export default function Navbar(){
+export default function Navbar() {
     return(
         <div className="nav">
             <div className="navLeft">
                 <p className="navMain">pandex</p>
-                
                 <i className="navIcon fa-brands fa-youtube"></i>
                 <i className="navIcon fa-brands fa-tiktok"></i>
                 <i className="navIcon fa-brands fa-twitter"></i>

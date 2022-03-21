@@ -1,0 +1,20 @@
+.sideBar{
+    flex: 2;
+    background-color: #181A1B;
+    color:rgb(255, 255, 235);
+    font-weight: 300;
+    padding:10px;
+    margin-right: 50px;
+}
+
+.sideBarSocial{
+    margin-top: 15px;
+    display: flex;
+}
+.sideBarIcon{
+    margin-left: 15px;
+    cursor: pointer;
+}
+.sideBarListItem{
+    list-style: none;
+}
