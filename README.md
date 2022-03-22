@@ -6,6 +6,6 @@ pandex is a place to share screenshots and configurations of all your *nix deskt
 **frontend**  
 * react: chosen javascript libary to create responsive and reactive websites   
 
-**backend (bot in use for static website)**
+**backend (not in use for static website)**
 * node.js: javascript runtime environment that allows js to run server side
 * express: back end web application framework for node.js
