@@ -6,6 +6,7 @@ export default function PostInfo() {
         <div className="singlePostWrapper">
           <img 
           src="https://i.redd.it/6yt0rkb7t3a61.png"
+          alt="post"
           className="singlePostImg"
           />
         <h1 className="singlePostTitle">
@@ -19,7 +20,7 @@ export default function PostInfo() {
           <span className='singlePostCreator'><b>keypos</b></span>
           <span className='singlePostDate'>1 hour ago</span>
         </div>
-        <p>
+        <p className='singlePostDesc'>
           this is a very cool description
         </p>
         </div>

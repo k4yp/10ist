@@ -6,7 +6,10 @@ export default function Sidebar() {
 
       <div className="sideBarItem">
         <span className="sideBarTitle">KEYPOS (YOUR USERNAME)</span>
-        <img src="https://i.pinimg.com/236x/10/6d/78/106d78ce92d04acc396628ba4d9fd752.jpg"/>
+        <img 
+        src="https://external-preview.redd.it/fAFuBHWbVrt1_IQVRyLUVP1UCP2Yi2R-I2LzKC9ibo8.jpg?auto=webp&s=cd4e3eaf1926e236fb0082150d44b17b93a97b26"
+        alt="profile"
+        />
       </div>
 
       <div className="sideBarItem">
