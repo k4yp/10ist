@@ -1,0 +1,63 @@
+*{
+    font-family: 'Inconsolata', monospace;
+}
+.create{
+    padding-top: 50px;
+    
+}
+.createImg {
+    margin-left: 150px;
+    width: 80%;
+    height: 300px;
+    object-fit: cover;
+
+}
+.createForm{
+    position: relative;
+}
+.createFormGroup{
+    margin-left: 150px;
+    display: flex;
+    align-items: center;
+    
+}
+.createIcon{
+    width: 25px;
+    display: flex;
+    border-radius: 50%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #181A1B;
+}
+.createInput{
+    font-size: 30px;
+    border: none;
+    padding: 20px;
+    width: 80%;
+    background-color:#ffffeb;
+    resize: none;
+}
+.createInput::placeholder{
+    color: #777777;
+}
+.createInput:focus{
+    outline: none;
+}
+.createText{
+    font-size: 20px;
+    height: 150px;
+}
+.createSubmit{
+    margin-top: 20px;
+    margin-left: 150px;
+    border: none;
+    background-color: #181A1B;
+    color:#ffffeb;
+    padding: 7px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 20px;
+}
