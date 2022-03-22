@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom"
 import "./navbar.css"
 
 export default function Navbar() {
+    const user = false;
     return(
         <div className="nav">
             <div className="navLeft">
@@ -11,15 +13,38 @@ export default function Navbar() {
             </div>
             <div className="navCenter">
                 <ul className="navList">
-                    <li className="navListItem">home</li>
-                    <li className="navListItem">browse</li>
-                    <li className="navListItem">info</li>
-                    <li className="navListItem">quiz</li>
+                    <li className="navListItem">
+                        <Link className="link" to="/" >home</Link>
+                    </li>
+                    <li className="navListItem">
+                        <Link className="link" to="/create" >create</Link>
+                    </li>
+                    <li className="navListItem">
+                        <Link className="link" to="/about" >about</Link>
+                    </li>
+                    <li className="navListItem">
+                        <Link className="link" to="/quiz" >quiz</Link>
+                    </li>
+                    {user && "LOGOUT"}
                 </ul>
             </div>
             <div className="navRight">
-                <i className="navIcon fa-solid fa-user"></i>
-                <i className="navSearchIcon fa-solid fa-magnifying-glass"></i>
+                {
+                    user?(
+                        <i className="navIcon fa-solid fa-user"></i>
+                    ) :
+                    (
+                        <ul className="navList">
+                            <li className="navListItem navListLogin">
+                                <Link className="link" to="/login" >login</Link>
+                            </li>
+                            <li className="navListItem navListRegister"> 
+                                <Link className="link" to="/register" >register</Link>
+                            </li>
+                        </ul>
+                    )
+                }
+            <i className="navSearchIcon fa-solid fa-magnifying-glass"></i>
             </div>   
         </div>
     )

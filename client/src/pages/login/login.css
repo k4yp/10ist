@@ -48,9 +48,9 @@
   position: absolute;
   top: 60px;
   right: 20px;
-  background-color: crimson;
+  background-color: lightgreen;
+  color:#181A1B;
   cursor: pointer;
   border: none;
   padding: 10px;
-  color: white;
 }
