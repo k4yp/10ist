@@ -1,4 +1,3 @@
-import Sidebar from '../../components/sidebar/Sidebar'
 import './settings.css'
 
 export default function Settings() {
@@ -14,7 +13,7 @@ export default function Settings() {
                 <div className="settingsProfilePic">
                     <img 
                     src="https://media.discordapp.net/attachments/885000925406715934/955723485492183111/5822407E-C6AA-4D5B-B30E-2B3F92ED89ED_4_5005_c.jpeg" 
-                    alt="profile picture" 
+                    alt="profile" 
                     />
                     <label htmlFor="fileInput">
                         <i className="settingsProfilePicIcon fa-solid fa-circle-user"></i>
