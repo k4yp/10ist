@@ -53,6 +53,10 @@
     font-size: 16px;
     font-weight: 300;
 }
+.navListItem:hover{
+    color:lightgreen;
+    text-decoration: underline;
+}
 
 .navListLogin{
     font-weight: 400;
@@ -67,4 +71,7 @@
 .navSearchIcon{
     font-size: 14px;
     cursor: pointer;
+}
+.navIcon:hover{
+    color:lightgreen;
 }

@@ -1,6 +1,13 @@
 const express = require("express");
-const mongoose = require("mongoose");
 const app = express();
+
+const dotenv = require("dotenv")
+dotenv.config()
+
+const mongoose = require("mongoose")
+mongoose.connect(process.env.MONGO_URL)
+.then(console.log("connected to mongoDB"))
+.catch((err) => console.log(err))
 
 app.get('/', (req,res) =>{
     res.statusCode = 200;
@@ -10,5 +17,5 @@ app.get('/', (req,res) =>{
 const PORT = 5000;
 
 app.listen(PORT, () => {
-    console.log(`server running on port ${PORT}`)
+    console.log(`server running at http:/localhost:${PORT} on port ${PORT}`)
   })
