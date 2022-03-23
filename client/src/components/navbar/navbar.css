@@ -74,3 +74,6 @@
 .navIcon:hover{
     color:lightgreen;
 }
+.link:hover{
+    text-decoration: underline;
+}

@@ -23,7 +23,7 @@ export default function Navbar() {
                         <Link className="link" to="/about" >about</Link>
                     </li>
                     <li className="navListItem">
-                        <Link className="link" to="/quiz" >quiz</Link>
+                        <Link className="link" to="/" >quiz</Link>
                     </li>
                     {user && "LOGOUT"}
                 </ul>
