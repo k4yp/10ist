@@ -14,16 +14,16 @@ export default function Navbar() {
             <div className="navCenter">
                 <ul className="navList">
                     <li className="navListItem">
-                        <Link className="link" to="/" >home</Link>
+                        <Link className="link" to="/" >Home</Link>
                     </li>
                     <li className="navListItem">
-                        <Link className="link" to="/create" >create</Link>
+                        <Link className="link" to="/create" >Create</Link>
                     </li>
                     <li className="navListItem">
-                        <Link className="link" to="/about" >about</Link>
+                        <Link className="link" to="/about" >About</Link>
                     </li>
                     <li className="navListItem">
-                        <Link className="link" to="/" >quiz</Link>
+                        <Link className="link" to="/" >Quiz</Link>
                     </li>
                     {user && "LOGOUT"}
                 </ul>
@@ -36,10 +36,10 @@ export default function Navbar() {
                     (
                         <ul className="navList">
                             <li className="navListItem navListLogin">
-                                <Link className="link" to="/login" >login</Link>
+                                <Link className="link" to="/login" >Login</Link>
                             </li>
                             <li className="navListItem navListRegister"> 
-                                <Link className="link" to="/register" >register</Link>
+                                <Link className="link" to="/register" >Register</Link>
                             </li>
                         </ul>
                     )
