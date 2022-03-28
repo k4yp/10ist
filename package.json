@@ -1,0 +1,19 @@
+{
+  "name": "pandex",
+  "version": "1.0.0",
+  "description": "This was created for 10ist web design project  \r ### About the website\r Pandex is a place to share screenshots and configurations of all your *nix desktops, themes or any other customisations\r ### Technologies used\r **Frontend**  \r * [React](https://reactjs.org) **:** Chosen javascript libary to create responsive and reactive websites",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keyp0s/pandex.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/keyp0s/pandex/issues"
+  },
+  "homepage": "https://github.com/keyp0s/pandex#readme"
+}
