@@ -6,7 +6,7 @@ export default function Navbar() {
     return(
         <div className="nav">
             <div className="navLeft">
-                <p className="navMain">pandex</p>
+                <p className="navMain">Pandex</p>
                 <i className="navIcon fa-brands fa-youtube"></i>
                 <i className="navIcon fa-brands fa-tiktok"></i>
                 <i className="navIcon fa-brands fa-twitter"></i>

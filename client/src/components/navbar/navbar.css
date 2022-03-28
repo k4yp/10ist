@@ -38,6 +38,33 @@
     margin-right: 16px;
     color:lightgreen;
     font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.navMain::after {
+    content: "";
+    width: 2px;
+    height: 16px;
+    background: lightgreen;
+    display: inline-block;
+}
+
+@keyframes cursor-blink {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+.navMain::after {
+    animation: cursor-blink 1s steps(16) infinite;
 }
 
 .navList{
@@ -55,6 +82,7 @@
 }
 .navListItem:hover{
     color:lightgreen;
+    transition: all 0.1s ease-in;
 }
 
 .navListLogin{
@@ -73,7 +101,9 @@
 }
 .navIcon:hover{
     color:lightgreen;
+    transition: all 0.1s ease-in;
 }
 .link:hover{
     text-decoration: underline;
+    transition: all 0.1s ease-in;
 }
