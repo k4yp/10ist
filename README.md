@@ -1,11 +1,14 @@
-# pandex
-this was created for 10ist web design project  
-### about the website
-pandex is a place to share screenshots and configurations of all your *nix desktops, themes or any other cool customisations
-### technologies used
-**frontend**  
-* react: chosen javascript libary to create responsive and reactive websites   
+# Pandex
+This was created for 10ist web design project  
+### About the website
+Pandex is a place to share screenshots and configurations of all your *nix desktops, themes or any other customisations
+### Technologies used
+**Frontend**  
+* [React](https://reactjs.org) **:** Chosen javascript libary to create responsive and reactive websites  
 
-**backend (in development)**
-* node.js: javascript runtime environment that allows js to run server side
-* express: back end web application framework for node.js
+**Backend**
+* [Node.js](https://nodejs.org/en/) **:** A Runtime environment that allows JS to run server side
+* [Express](https://expressjs.com/) **:** Back end web application framework for Node.js  
+
+**Database**
+* [MongoDB](https://www.mongodb.com/) **:** A document oriented NoSQL database
