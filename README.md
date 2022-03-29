@@ -2,7 +2,8 @@
 ![home page](homepage.png)
 *This was created for 10ist web design project*  
 ### About the website
-Pandex is a place to share screenshots and configurations of all your *nix desktops, themes or any other customisations
+Pandex is a place to share screenshots and configurations of all your *nix desktops, themes or any other customisations  
+Currently [live on heroku](https://thepandex.herokuapp.com/)
 ### Technologies used
 **Frontend**  
 * [React](https://reactjs.org) **:** Chosen javascript libary to create responsive and reactive websites  
