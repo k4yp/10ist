@@ -4,6 +4,7 @@ const dotenv = require("dotenv")
 const authRoute = require("./routes/auth")
 const usersRoute = require("./routes/users")
 const postsRoute = require("./routes/posts")
+const catagoriesRoute = require("./routes/catagories")
 
 dotenv.config()
 app.use(express.json())
@@ -16,6 +17,7 @@ mongoose.connect(process.env.MONGO_URL)
 app.use("/server/auth", authRoute)
 app.use("/server/users", usersRoute)
 app.use("/server/posts", postsRoute)
+app.use("/server/catagories", catagoriesRoute)
 
 const PORT = process.env.PORT || 5000
 

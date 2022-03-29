@@ -1,5 +1,6 @@
 {
     "name": "pandex",
+    "description": "only here so heroku works, serves no other purpose",
     "version": "1.0.0",
     "dependencies": {
       "bcrypt": "^5.0.1",
