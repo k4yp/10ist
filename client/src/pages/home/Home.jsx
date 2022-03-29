@@ -3,9 +3,20 @@ import Sidebar from "../../components/sidebar/Sidebar"
 import Posts from "../../components/posts/Posts"
 import Footer from "../../components/footer/Footer"
 import "./home.css"
+import { useState, useEffect } from "react"
+import axios from "axios"
 
+export default function Home() {
+  const [posts,setPosts] = useState([])
 
-export default function home() {
+  useEffect(()=>{
+    const fetchPosts = async ()=>{
+      const res = await axios.get("/posts")
+      console.log(res)
+    }
+    fetchPosts()
+  },[])
+
   return (
     <>
       <Header/>
