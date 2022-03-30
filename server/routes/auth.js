@@ -5,7 +5,6 @@ const bcrypt = require("bcrypt")
 //register a new user
 router.post("/register", async (req, res) => {
     try {
-
         const salt = await bcrypt.genSalt(10);
         const hashedPass = await bcrypt.hash(req.body.password, salt);
         const newUser = new User({
@@ -35,5 +34,24 @@ router.post("/login", async (req, res) => {
       res.status(500).json(err);
     }
 });
+
+//code to look at may work (login to an existing user)
+/*
+router.post('/login' , async (req,res) =>{
+try {
+      const user = await User.findOne({username: req.body.username})
+      if(!user){
+          return res.status(400).json("wrong credentials")
+      }
+      const validated = await bcrypt.compare(req.body.password, user.password)
+      if(!validated){
+          return res.status(400).json("wrong credentials")
+      }
+      res.status(200).json(user)
+  } catch(err){
+      res.status(500).json(err)
+  }
+})
+*/
 
 module.exports = router

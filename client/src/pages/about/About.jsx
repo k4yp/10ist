@@ -3,7 +3,7 @@ import './about.css'
 export default function About() {
   return (
     <div className='about'>
-        <h1 id="pandex">Pandex</h1>
+        <h1 className="aboutTitle">Pandex</h1>
         <p>This was created for 10ist web design project  </p>
         <h3 id="about-the-website">About the website</h3>
         <p>Pandex is a place to share screenshots and configurations of all your *nix desktops, themes or any other customisations</p>

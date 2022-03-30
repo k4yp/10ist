@@ -35,7 +35,7 @@ app.use("/server/users", usersRoute)
 app.use("/server/posts", postsRoute)
 app.use("/server/catagories", catagoriesRoute)
 
-const PORT = 5000
+const PORT = process.env.PORT || 5000
 
 app.get('/', (req,res)=>{
     res.send('hello')
