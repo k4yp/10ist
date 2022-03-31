@@ -38,7 +38,7 @@ app.use("/server/catagories", catagoriesRoute)
 const PORT = process.env.PORT || 5000
 
 app.get('/', (req,res)=>{
-    res.send('hello')
+    res.send('hello world')
 })
 
 app.listen(PORT, () => {
