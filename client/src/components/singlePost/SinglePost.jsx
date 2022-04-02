@@ -1,4 +1,5 @@
-import { useLocation } from 'react-router-dom'
+import { useLocation } from 'react-router'
+import { Link } from "react-router-dom";
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 import './singlePost.css'
@@ -11,32 +12,36 @@ export default function SinglePost() {
   {
     const getPost = async () => {
       const res = await axios.get("/posts/" + path);
-      console.log(res)
+      setPost(res.data)
     }
     getPost()
   }, [path])
   return (
     <div className='singlePost'>
         <div className="singlePostWrapper">
-          <img 
-          src="https://i.redd.it/6yt0rkb7t3a61.png"
-          alt="post"
-          className="singlePostImg"
-          />
+          {post.photo &&(
+            <img 
+            src={post.photo}
+            alt="post"
+            className="singlePostImg"
+            />
+          )}
         <h1 className="singlePostTitle">
-          the thing and the thing
+          {post.title}
           <div className="singlePostEdit">
             <i className="singlePostIcon fa-solid fa-pen"></i>
             <i className="singlePostIcon fa-solid fa-trash"></i>
           </div>
         </h1>
         <div className="singlePostInfo">
-          <span className='singlePostCreator'><b>keypos</b></span>
-          <span className='singlePostDate'>1 hour ago</span>
+          <span className='singlePostCreator'>
+            <Link className="link" to={`/?user=${post.username}`}>
+              <b>{post.username}</b>
+            </Link>
+          </span>
+          <span className='singlePostDate'>{new Date(post.createdAt).toDateString()}</span>
         </div>
-        <p className='singlePostDesc'>
-          this is a very cool description
-        </p>
+        <p className='singlePostDesc'>{post.desc}</p>
         </div>
     </div>
   )
