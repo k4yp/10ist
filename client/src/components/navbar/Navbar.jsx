@@ -1,8 +1,14 @@
+import { useContext } from "react"
 import { Link } from "react-router-dom"
+import { Context } from "../../context/Context"
 import "./navbar.css"
 
 export default function Navbar() {
-    const user = false;
+    const { user,dispatch } = useContext(Context)
+
+    const handleLogout = () => {
+        dispatch({ type: "LOGOUT"})
+    }
     return(
         <div className="nav">
             <div className="navLeft">
@@ -25,7 +31,7 @@ export default function Navbar() {
                     <li className="navListItem">
                         <Link className="link" to="/" >Quiz</Link>
                     </li>
-                    {user && "LOGOUT"}
+                    <li className="navListItem link" onClick={handleLogout}>{user && "Logout"}</li>
                 </ul>
             </div>
             <div className="navRight">

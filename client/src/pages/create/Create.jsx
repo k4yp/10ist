@@ -7,7 +7,7 @@ export default function Create() {
         <form className='createForm'>
             <div className="createFormGroup">
                 <label htmlFor="fileInput">
-                    <i class="createIcon fa-solid fa-arrow-up-from-bracket"></i>
+                    <i className="createIcon fa-solid fa-arrow-up-from-bracket"></i>
                 </label>
                 <input type="file" id="fileInput" style={{display:"none"}}/>
                 <input type="text" placeholder='Title your creation' className="createInput" autoFocus={true}/>

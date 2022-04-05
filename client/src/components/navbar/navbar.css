@@ -79,6 +79,7 @@
     margin-right: 5%;
     font-size: 16px;
     font-weight: 300;
+    cursor: pointer;
 }
 .navListItem:hover{
     color:lightgreen;

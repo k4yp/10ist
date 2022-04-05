@@ -20,23 +20,8 @@ router.post("/register", async (req, res) => {
 })
 
 //login to an existing user
-router.post("/login", async (req, res) => {
-    try {
-      const user = await User.findOne({ username: req.body.username });
-      !user && res.status(400).json("Incorrect credentials");
-  
-      const validated = await bcrypt.compare(req.body.password, user.password);
-      !validated && res.status(400).json("Incorrect credentials");
-  
-      const { password, ...others } = user._doc;
-      res.status(200).json(others);
-    } catch (err) {
-      res.status(500).json(err);
-    }
-});
-
 //code to look at may work (login to an existing user)
-/*
+
 router.post('/login' , async (req,res) =>{
 try {
       const user = await User.findOne({username: req.body.username})
@@ -52,6 +37,6 @@ try {
       res.status(500).json(err)
   }
 })
-*/
+
 
 module.exports = router

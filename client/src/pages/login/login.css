@@ -42,6 +42,7 @@
 
 .loginButton:disabled{
   cursor: not-allowed;
+  background-color: lightgray;
 }
 
 .loginRegisterButton {
