@@ -1,4 +1,7 @@
 # Pandex
+![last commit](https://img.shields.io/github/last-commit/keyp0s/pandex?logo=GitHub)
+![status](https://img.shields.io/github/deployments/keyp0s/pandex/thepandex?logo=Heroku)
+
 ![home page](homepage.png)
 *This was created for 10ist web design project*  
 ### About the website
@@ -18,3 +21,11 @@ Currently [live on heroku](https://thepandex.herokuapp.com/)
 
 **Database**
 * [MongoDB](https://www.mongodb.com/) **:** A document oriented NoSQL database
+
+## Installation
+### Prerequisites
+* The latest [Node.js](https://nodejs.org/en/download/) LTS installed
+* [MongoDB](https://www.mongodb.com/try/download/community) server installed
+### Setup
+* Clone the repository to your computer with ```> git clone https://github.com/keyp0s/pandex.git```
+* Then go to the root folder and run  ```> (cd server && npm install) && (cd ..) && (cd client && npm install) && (cd ..)``` to install the required packages
