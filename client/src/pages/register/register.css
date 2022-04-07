@@ -5,21 +5,20 @@
     justify-content: center;
     background-size: cover;
 }
- 
+
 .registerTitle {
-  font-size: 30px;
-  font-weight: 500;
+    font-size: 30px;
+    font-weight: 500;
 }
 
 .registerForm {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .registerForm > label {
-  margin: 10px 0;
-
+    margin: 10px 0;
 }
 
 .registerForm > input {
@@ -27,30 +26,30 @@
     margin-bottom: 20px;
     border-bottom: 1px solid lightgray;
 }
-.registerForm>input:focus{
+.registerForm > input:focus {
     outline: none;
 }
 
 .registerButton {
-  margin-top: 20px;
-  cursor: pointer;
-  background-color: #181A1B;
-  border: none;
-  color: white;
-  padding: 10px 100px; 
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: #181a1b;
+    border: none;
+    color: white;
+    padding: 10px 100px;
 }
 
-.registerButton:disabled{
-  cursor: not-allowed;
+.registerButton:disabled {
+    cursor: not-allowed;
 }
 
 .registerLoginButton {
-  position: absolute;
-  top: 60px;
-  right: 20px;
-  background-color: lightgreen;
-  color:#181A1B;
-  cursor: pointer;
-  border: none;
-  padding: 10px;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: lightgreen;
+    color: #181a1b;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
 }
