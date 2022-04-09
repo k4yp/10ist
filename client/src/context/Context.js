@@ -1,5 +1,4 @@
-import { createContext, useReducer } from 'react'
-import { useEffect } from 'react'
+import { createContext, useEffect, useReducer } from 'react'
 import Reducer from './Reducer'
 
 const INITIAL_STATE = {

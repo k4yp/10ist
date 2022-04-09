@@ -1,45 +1,48 @@
 .singlePost {
-  flex: 9;
+    flex: 9;
 }
 
 .singlePostWrapper {
-  padding: 20px;
-  padding-right: 0;
+    padding: 20px;
+    padding-right: 0;
 }
 
 .singlePostImg {
-  width: 100%;
-  object-fit: cover;
+    width: 768px;
+    height: 432px;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .singlePostTitle {
-  text-align: center;
-  margin: 10px;
-  font-size: 28px;
+    text-align: center;
+    margin: 10px;
+    font-size: 28px;
 }
 
 .singlePostEdit {
-  float: right;
-  font-size: 16px;
+    float: right;
+    font-size: 16px;
 }
 
 .singlePostIcon {
-  margin-left: 10px;
-  cursor: pointer;
+    margin-left: 10px;
+    cursor: pointer;
 }
 
 .singlePostInfo {
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: space-between;
-  font-size: 16px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
 }
 
-.singlePostAuthor{
-  margin-left: 5px;
+.singlePostAuthor {
+    margin-left: 5px;
 }
 
 .singlePostDesc {
-  font-size: 18px;
-  line-height: 25px;
+    font-size: 18px;
+    line-height: 25px;
 }

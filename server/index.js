@@ -1,5 +1,6 @@
 const express = require('express')
 const multer = require('multer')
+const path = require('path')
 const app = express()
 const dotenv = require('dotenv')
 const authRoute = require('./routes/auth')
@@ -9,6 +10,7 @@ const categoriesRoute = require('./routes/categories')
 
 dotenv.config()
 app.use(express.json())
+app.use('/images', express.static(path.join(__dirname, '/images')))
 
 const mongoose = require('mongoose')
 mongoose
@@ -39,7 +41,7 @@ app.use('/server/categories', categoriesRoute)
 const PORT = process.env.PORT || 5000
 
 app.get('/', (req, res) => {
-    res.send('hello world')
+    res.send('server running')
 })
 
 app.listen(PORT, () => {
