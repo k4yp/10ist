@@ -1,17 +1,16 @@
 import './header.css'
+import desktop from '../../img/desktop.gif'
 
 export default function Header() {
     return (
         <div className='header'>
             <div className='headerTitles'>
-                <span className='headerUser'>keypos</span>
-                <span className='headerTitle'>endeavourOS rice</span>
+                <span className='headerUser'>Welcome to Pandex</span>
+                <span className='headerTitle'>
+                    Home of unix customisation and ricing
+                </span>
             </div>
-            <img
-                className='headerImg'
-                src='https://i.redd.it/6yt0rkb7t3a61.png'
-                alt='arch rice'
-            />
+            <img className='headerImg' src={desktop} />
         </div>
     )
 }

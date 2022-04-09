@@ -6,7 +6,6 @@ const dotenv = require('dotenv')
 const authRoute = require('./routes/auth')
 const usersRoute = require('./routes/users')
 const postsRoute = require('./routes/posts')
-const categoriesRoute = require('./routes/categories')
 
 dotenv.config()
 app.use(express.json())
@@ -36,7 +35,6 @@ app.post('/server/upload', upload.single('file'), (req, res) => {
 app.use('/server/auth', authRoute)
 app.use('/server/users', usersRoute)
 app.use('/server/posts', postsRoute)
-app.use('/server/categories', categoriesRoute)
 
 const PORT = process.env.PORT || 5000
 
