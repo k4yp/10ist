@@ -9,7 +9,11 @@
 .headerName {
     font-weight: 700;
     margin-bottom: 10px;
-    font-size: 20px;
+    font-size: 30px;
+}
+.headerDesc {
+    margin-bottom: 40px;
+    font-size: 18px;
 }
 .headerImg {
     width: 700px;

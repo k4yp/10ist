@@ -1,4 +1,5 @@
 import './about.css'
+import desktop from '../../img/desktop.gif'
 
 export default function About() {
     return (
@@ -12,6 +13,7 @@ export default function About() {
                 src='https://img.shields.io/github/deployments/keyp0s/pandex/thepandex?logo=Heroku'
                 alt='status'
             />
+            <img className='headerImg' src={desktop} />
             <h2>About the website</h2>
             <p>
                 Pandex is a place to share screenshots and configurations of all your *nix desktops, themes or any other customisations

@@ -1,5 +1,6 @@
 .singlePost {
     flex: 9;
+    padding: 0 200px 0 200px;
 }
 
 .singlePostWrapper {
@@ -29,6 +30,7 @@
 .singlePostIcon {
     margin-left: 10px;
     cursor: pointer;
+    color: crimson;
 }
 
 .singlePostInfo {

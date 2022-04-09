@@ -1,5 +1,4 @@
 import './header.css'
-import desktop from '../../img/desktop.gif'
 
 export default function Header() {
     return (
@@ -10,7 +9,6 @@ export default function Header() {
                     Home of unix customisation and ricing
                 </span>
             </div>
-            <img className='headerImg' src={desktop} />
         </div>
     )
 }

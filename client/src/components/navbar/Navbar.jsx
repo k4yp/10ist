@@ -61,7 +61,6 @@ export default function Navbar() {
                         </li>
                     </ul>
                 )}
-                <i className='navSearchIcon fa-solid fa-magnifying-glass'></i>
             </div>
         </div>
     )

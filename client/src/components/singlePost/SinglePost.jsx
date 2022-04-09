@@ -49,7 +49,6 @@ export default function SinglePost() {
                                 className='singlePostIcon fa-solid fa-trash'
                                 onClick={handleDelete}
                             ></i>
-                            <i className='singlePostIcon fa-solid fa-pen'></i>
                         </div>
                     )}
                 </h1>
