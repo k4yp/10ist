@@ -20,7 +20,6 @@ router.post('/register', async (req, res) => {
 })
 
 //login to an existing user
-//code to look at may work (login to an existing user)
 
 router.post('/login', async (req, res) => {
     try {

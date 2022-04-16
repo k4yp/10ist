@@ -6,7 +6,8 @@ import Login from './pages/login/Login'
 import Settings from './pages/settings/Settings'
 import Register from './pages/register/Register'
 import About from './pages/about/About'
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
+import Guide from './pages/guide/Guide'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { useContext } from 'react'
 import { Context } from './context/Context'
 
@@ -21,6 +22,9 @@ function App() {
                 </Route>
                 <Route path='/about'>
                     <About />
+                </Route>
+                <Route path='/guide'>
+                    <Guide />
                 </Route>
                 <Route path='/create'>{user ? <Create /> : <Register />}</Route>
                 <Route path='/login'>{user ? <Home /> : <Login />}</Route>

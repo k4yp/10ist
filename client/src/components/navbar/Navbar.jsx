@@ -25,13 +25,18 @@ export default function Navbar() {
                         </Link>
                     </li>
                     <li className='navListItem'>
-                        <Link className='link' to='/create'>
-                            Create
+                        <Link className='link' to='/guide'>
+                            Guide
                         </Link>
                     </li>
                     <li className='navListItem'>
                         <Link className='link' to='/about'>
                             About
+                        </Link>
+                    </li>
+                    <li className='navListItem'>
+                        <Link className='link' to='/create'>
+                            Create
                         </Link>
                     </li>
                     <li className='navListItem'>
@@ -46,7 +51,9 @@ export default function Navbar() {
             </div>
             <div className='navRight'>
                 {user ? (
-                    <i className='navIcon fa-solid fa-user'></i>
+                    <Link to='/settings'>
+                        <i className='navIcon fa-solid fa-user'></i>
+                    </Link>
                 ) : (
                     <ul className='navList'>
                         <li className='navListItem navListLogin'>
