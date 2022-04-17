@@ -1,6 +1,7 @@
 import Header from '../../components/header/Header'
 import Posts from '../../components/posts/Posts'
 import Footer from '../../components/footer/Footer'
+import Gallery from '../../components/gallery/Gallery'
 import './home.css'
 import { useState, useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
@@ -21,6 +22,7 @@ export default function Home() {
     return (
         <>
             <Header />
+            <Gallery />
             <div className='home'>
                 <Posts posts={posts} />
             </div>
