@@ -1,5 +1,6 @@
 import Header from '../../components/header/Header'
 import Posts from '../../components/posts/Posts'
+import Gallery from '../../components/gallery/Gallery'
 import Footer from '../../components/footer/Footer'
 import './home.css'
 import { useState, useEffect } from 'react'
@@ -21,6 +22,7 @@ export default function Home() {
     return (
         <>
             <Header />
+            <Gallery />
             <div className='home'>
                 <Posts posts={posts} />
             </div>

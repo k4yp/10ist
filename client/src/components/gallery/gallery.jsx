@@ -1,4 +1,8 @@
-import './navbar.css'
+import './gallery.css'
 export default function gallery() {
-    return <div>gallery</div>
+    return (
+        <div>
+            <h1>gallery</h1>
+        </div>
+    )
 }
