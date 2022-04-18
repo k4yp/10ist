@@ -14,8 +14,8 @@ export default function Login() {
         dispatch({ type: 'LOGIN_START' })
         try {
             const res = await axios.post('/auth/login', {
-                username: userRef.dot.value,
-                password: passwordRef.dot.value,
+                username: userRef.current.value,
+                password: passwordRef.current.value,
             })
             dispatch({ type: 'LOGIN_SUCCESS', payload: res.data })
         } catch (err) {
@@ -34,7 +34,6 @@ export default function Login() {
                     placeholder='Enter password'
                     ref={passwordRef}
                 />
-
                 <button
                     className='loginButton'
                     type='submit'
