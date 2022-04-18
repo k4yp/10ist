@@ -1,7 +1,7 @@
 import Header from '../../components/header/Header'
 import Posts from '../../components/posts/Posts'
-import Gallery from '../../components/gallery/Gallery'
 import Footer from '../../components/footer/Footer'
+import Gallery from '../../components/gallery/Gallery'
 import './home.css'
 import { useState, useEffect } from 'react'
 import { useLocation } from 'react-router-dom'

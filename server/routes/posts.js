@@ -24,14 +24,14 @@ router.put('/:id', async (req, res) => {
                     { new: true }
                 )
                 res.status(200).json(updatedPost)
-            } catch (err) {
-                res.status(500).json(err)
+            } catch {
+                res.status(500)
             }
         } else {
-            res.status(401).json('You can only update your posts')
+            res.status(401)
         }
-    } catch (err) {
-        res.status(500).json(err)
+    } catch {
+        res.status(500)
     }
 })
 
@@ -42,14 +42,12 @@ router.delete('/:id', async (req, res) => {
         if (post.username === req.body.username) {
             try {
                 await post.delete()
-                res.status(200).json('Success (Post Deleted)')
-            } catch (err) {
-                res.status(500).json(err)
+                res.status(200).json('Success Post Deleted')
+            } catch {
+                res.status(500)
             }
         } else {
-            res.status(401).json(
-                'Internal Server Error (You can only delete your posts)'
-            )
+            res.status(401)
         }
     } catch (err) {
         res.status(500).json(err)
