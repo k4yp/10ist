@@ -1,6 +1,4 @@
 import './gallery.css'
-import leftArrow from './icons/left-arrow.svg'
-import rightArrow from './icons/right-arrow.svg'
 
 export default function GalleryButton({ direction, moveSlide }) {
     console.log(direction, moveSlide)
@@ -8,10 +6,18 @@ export default function GalleryButton({ direction, moveSlide }) {
         <button
             onClick={moveSlide}
             className={
-                direction === 'next' ? 'btn-slide next' : 'btn-slide prev'
+                direction === 'next'
+                    ? 'galleryBtnSlide next'
+                    : 'galleryBtnSlide prev'
             }
         >
-            <img src={direction === 'next' ? rightArrow : leftArrow} />
+            <i
+                className={
+                    direction === 'next'
+                        ? 'galleryBtn fa-solid fa-angle-right'
+                        : 'galleryBtn fa-solid fa-angle-left'
+                }
+            />
         </button>
     )
 }

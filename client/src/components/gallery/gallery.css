@@ -1,4 +1,4 @@
-.container-Gallery {
+.containerGallery {
     max-width: 960px;
     height: 500px;
     margin: 10px auto 0;
@@ -6,7 +6,7 @@
     overflow: hidden;
 }
 @media screen and (max-width: 700px) {
-    .container-Gallery {
+    .containerGallery {
         margin: 100px 10px 0;
     }
 }
@@ -22,14 +22,15 @@
     height: 100%;
     object-fit: cover;
 }
-.active-anim {
+.activeAnim {
     opacity: 1;
 }
 
-.btn-slide {
-    width: 46px;
-    height: 46px;
-    background: white;
+.galleryBtnSlide {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    opacity: 0.8;
     border: none;
     position: absolute;
     display: flex;
@@ -37,8 +38,15 @@
     align-items: center;
     cursor: pointer;
 }
+.galleryBtn {
+    font-size: 26px;
+}
+.galleryBtnSlide:hover {
+    background-color: lightgreen;
+    transition: all 0.2s ease-in;
+}
 
-.btn-slide img {
+.galleryBtnSlide img {
     width: 25px;
     height: 25px;
     pointer-events: none;
@@ -54,19 +62,19 @@
     transform: translateY(-60%);
 }
 
-.container-dots {
+.containerProgresss {
     position: absolute;
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
 }
-.dot {
+.progress {
     width: 32px;
     height: 4px;
     margin: 0 5px;
     background: white;
 }
-.dot.active {
+.progress.active {
     background: lightgreen;
 }

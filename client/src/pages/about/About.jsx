@@ -19,7 +19,7 @@ export default function About() {
             <p>
                 Pandex is a place to share screenshots and configurations of all your *nix desktops, themes or any other customisations
                 <br />
-                Currently <a href='https://thepandex.herokuapp.com/'>live on heroku</a> (may or may not be working)
+                dotly <a href='https://thepandex.herokuapp.com/'>live on heroku</a> (may or may not be working)
             </p>
             <h2 id='technologies-used'>Technologies used</h2>
             <p>

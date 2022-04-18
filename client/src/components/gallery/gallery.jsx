@@ -22,19 +22,19 @@ export default function Gallery() {
         }
     }
 
-    const moveDot = (index) => {
+    const moveprogress = (index) => {
         setSlideIndex(index)
     }
 
     return (
-        <div className='container-Gallery'>
+        <div className='containerGallery'>
             {GalleryData.map((obj, index) => {
                 return (
                     <div
                         key={obj.id}
                         className={
                             slideIndex === index + 1
-                                ? 'slide active-anim'
+                                ? 'slide activeAnim'
                                 : 'slide'
                         }
                     >
@@ -50,12 +50,12 @@ export default function Gallery() {
             <GalleryButton moveSlide={nextSlide} direction={'next'} />
             <GalleryButton moveSlide={prevSlide} direction={'prev'} />
 
-            <div className='container-dots'>
+            <div className='containerProgresss'>
                 {Array.from({ length: 8 }).map((item, index) => (
                     <div
-                        onClick={() => moveDot(index + 1)}
+                        onClick={() => moveprogress(index + 1)}
                         className={
-                            slideIndex === index + 1 ? 'dot active' : 'dot'
+                            slideIndex === index + 1 ? 'progress active' : 'progress'
                         }
                     ></div>
                 ))}

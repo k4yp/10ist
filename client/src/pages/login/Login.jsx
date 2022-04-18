@@ -14,8 +14,8 @@ export default function Login() {
         dispatch({ type: 'LOGIN_START' })
         try {
             const res = await axios.post('/auth/login', {
-                username: userRef.current.value,
-                password: passwordRef.current.value,
+                username: userRef.dot.value,
+                password: passwordRef.dot.value,
             })
             dispatch({ type: 'LOGIN_SUCCESS', payload: res.data })
         } catch (err) {
