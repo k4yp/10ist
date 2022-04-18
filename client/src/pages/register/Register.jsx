@@ -30,7 +30,7 @@ export default function Register() {
                 <label>Username</label>
                 <input
                     type='text'
-                    minlength='4'
+                    minlength='3'
                     placeholder='Enter username'
                     onChange={(event) => setUsername(event.target.value)}
                 />

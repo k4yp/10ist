@@ -2,7 +2,7 @@ import './gallery.css'
 import leftArrow from './icons/left-arrow.svg'
 import rightArrow from './icons/right-arrow.svg'
 
-export default function BtnGallery({ direction, moveSlide }) {
+export default function GalleryButton({ direction, moveSlide }) {
     console.log(direction, moveSlide)
     return (
         <button

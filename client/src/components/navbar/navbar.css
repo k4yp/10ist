@@ -5,6 +5,7 @@
     background-color: #181a1b;
     position: sticky;
     top: 0;
+    z-index: 1;
     display: flex;
     align-items: center;
     font-family: 'Inconsolata', monospace;
@@ -21,11 +22,9 @@
 .navCenter {
     flex: 6;
 }
-
-.navIcon {
-    font-size: 14px;
-    margin-right: 16px;
-    cursor: pointer;
+.navProfile {
+    text-decoration: none;
+    color: lightgreen;
 }
 
 .navImg {
@@ -81,8 +80,18 @@
     font-size: 16px;
     font-weight: 300;
     cursor: pointer;
+    list-style: none;
+    color: white;
 }
 .navListItem:hover {
+    color: lightgreen;
+    transition: all 0.1s ease-in;
+}
+.navProfile {
+    cursor: pointer;
+    color: white;
+}
+.navProfile:hover {
     color: lightgreen;
     transition: all 0.1s ease-in;
 }
@@ -100,10 +109,6 @@
 .navSearchIcon {
     font-size: 14px;
     cursor: pointer;
-}
-.navIcon:hover {
-    color: lightgreen;
-    transition: all 0.1s ease-in;
 }
 .link:hover {
     text-decoration: underline;

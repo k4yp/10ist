@@ -5,6 +5,7 @@ import Navbar from './components/navbar/Navbar'
 import Login from './pages/login/Login'
 import Settings from './pages/settings/Settings'
 import Register from './pages/register/Register'
+import Quiz from './pages/quiz/Quiz'
 import About from './pages/about/About'
 import Guide from './pages/guide/Guide'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
@@ -25,6 +26,9 @@ function App() {
                 </Route>
                 <Route path='/guide'>
                     <Guide />
+                </Route>
+                <Route path='/quiz'>
+                    <Quiz />
                 </Route>
                 <Route path='/create'>{user ? <Create /> : <Register />}</Route>
                 <Route path='/login'>{user ? <Home /> : <Login />}</Route>

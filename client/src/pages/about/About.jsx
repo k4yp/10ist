@@ -14,7 +14,7 @@ export default function About() {
             />
             <img className='headerImg' src={
                                 process.env.PUBLIC_URL +`/img/linux-desktops.gif`
-                            } />
+                            } alt="linux desktop gif"/>
             <h2>About the website</h2>
             <p>
                 Pandex is a place to share screenshots and configurations of all your *nix desktops, themes or any other customisations
