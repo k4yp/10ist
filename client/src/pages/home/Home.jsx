@@ -4,7 +4,7 @@ import Footer from '../../components/footer/Footer'
 import Gallery from '../../components/gallery/Gallery'
 import './home.css'
 import { useState, useEffect } from 'react'
-import { useLocation } from 'react-router-dom'
+import { useLocation, Link } from 'react-router-dom'
 import axios from 'axios'
 
 export default function Home() {
@@ -23,7 +23,10 @@ export default function Home() {
         <>
             <Header />
             <Gallery />
-            <div className='home'>
+            <div className='homeInfo'>
+                If your new to ricing you can check out the guide <Link className="link" style={{ textDecoration:'underline' }} to='/guide'>here</Link>
+            </div>
+            <div className='home'> 
                 <Posts posts={posts} />
             </div>
             <Footer />

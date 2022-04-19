@@ -8,6 +8,7 @@ import Register from './pages/register/Register'
 import Quiz from './pages/quiz/Quiz'
 import About from './pages/about/About'
 import Guide from './pages/guide/Guide'
+import ScrollToTop from './ScrollToTop'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { useContext } from 'react'
 import { Context } from './context/Context'
@@ -16,6 +17,7 @@ function App() {
     const { user } = useContext(Context)
     return (
         <Router>
+            <ScrollToTop />
             <Navbar />
             <Switch>
                 <Route exact path='/'>

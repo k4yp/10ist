@@ -27,11 +27,6 @@ export default function Navbar() {
                         </Link>
                     </li>
                     <li className='navListItem'>
-                        <Link className='link' to='/about'>
-                            About
-                        </Link>
-                    </li>
-                    <li className='navListItem'>
                         <Link className='link' to='/quiz'>
                             Quiz
                         </Link>
@@ -39,6 +34,11 @@ export default function Navbar() {
                     <li className='navListItem'>
                         <Link className='link' to='/create'>
                             Create
+                        </Link>
+                    </li>
+                    <li className='navListItem'>
+                        <Link className='link' to='/about'>
+                            About
                         </Link>
                     </li>
                 </ul>
