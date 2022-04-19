@@ -24,7 +24,7 @@ export default function Home() {
             <Header />
             <Gallery />
             <div className='homeInfo'>
-                If your new to ricing you can check out the guide <Link className="link" style={{ textDecoration:'underline' }} to='/guide'>here</Link>
+                If your new to ricing you can check out the guide <Link className="homeLink" to='/guide'>here</Link>
             </div>
             <div className='home'> 
                 <Posts posts={posts} />

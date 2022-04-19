@@ -1,9 +1,10 @@
 .guide {
-    padding: 0 200px 0 200px;
+    padding: 0 15% 0 15%;
 }
 .guideLink {
     text-decoration: underline;
-    color: black;
+    color: dodgerblue;
+    font-weight: 500;
 }
 .guideListItem {
     margin-top: 10px;
