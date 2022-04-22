@@ -5,12 +5,15 @@
 }
 .Answers li {
     padding: 10px;
-    background-color: lightgrey;
-    margin: 0 0 5px;
+    background-color: #181a1b;
+    color: white;
+    margin: 5px 20%;
+    text-align: center;
 }
 .Answers li:hover {
     cursor: pointer;
-    background-color: #a2a2a2;
+    text-decoration: underline;
+    color: lightgreen;
 }
 .Answers .correct {
     background-color: lightgreen;
@@ -23,4 +26,8 @@
 }
 .Answers[disabled] {
     pointer-events: none;
+}
+.result {
+    text-align: center;
+    padding: 10px;
 }

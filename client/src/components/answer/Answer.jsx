@@ -25,11 +25,11 @@ export default function Answer(props) {
             >
                 {answers}
             </ul>
-            <div>
+            <div className='result'>
                 {props.correctAnswer
-                    ? 'Correct Answer!'
+                    ? 'Correct Answer'
                     : props.clickedAnswer
-                    ? 'Incorrect Answer!'
+                    ? 'Incorrect Answer'
                     : ''}
             </div>
         </>

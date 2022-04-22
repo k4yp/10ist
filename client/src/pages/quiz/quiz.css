@@ -1,6 +1,8 @@
 .NextStep {
     background-color: lightgreen;
     padding: 10px 30px;
+    display: block;
+    margin: 10px auto;
     border: 0;
     cursor: pointer;
 }
