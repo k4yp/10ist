@@ -1,3 +1,21 @@
-.quiz {
-    padding-left: 200px;
+.NextStep {
+    background-color: lightgreen;
+    padding: 10px 30px;
+    border: 0;
+    cursor: pointer;
+}
+.NextStep:hover {
+    text-decoration: underline;
+}
+.NextStep[disabled] {
+    display: none;
+}
+
+.finalPage {
+    text-align: center;
+}
+.finalPage h1 {
+    text-align: center;
+    margin: 15px 0;
+    font-size: 25px;
 }

@@ -7,8 +7,8 @@ export default function guide() {
             <div className='guide'>
                 <h2>A simple guide to ricing</h2>
                 <iframe
-                    width='560'
-                    height='315'
+                    width='100%'
+                    height='400px'
                     src='https://www.youtube.com/embed/ng7mlrKRpmA'
                     title='YouTube video player'
                     frameborder='0'
@@ -17,11 +17,8 @@ export default function guide() {
                 ></iframe>
                 <h3>What is ricing?</h3>
                 <p>
-                    The term 'rice' originated from street racing and means Race
-                    Inspired Cosmetic Enhancements.
-                </p>
-                <p>
-                    It is now commonly used to describe visual customisations to
+                    The term 'rice' first originated from street racing and means Race
+                    Inspired Cosmetic Enhancements. It is now commonly used to describe visual customisations to
                     the linux desktop that dont provide any practical benefits.
                 </p>
                 <h3>How do I start ricing?</h3>

@@ -1,0 +1,26 @@
+.Answers {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.Answers li {
+    padding: 10px;
+    background-color: lightgrey;
+    margin: 0 0 5px;
+}
+.Answers li:hover {
+    cursor: pointer;
+    background-color: #a2a2a2;
+}
+.Answers .correct {
+    background-color: lightgreen;
+    text-decoration: underline;
+}
+.Answers .incorrect {
+    background-color: crimson;
+    color: white;
+    text-decoration: underline;
+}
+.Answers[disabled] {
+    pointer-events: none;
+}
