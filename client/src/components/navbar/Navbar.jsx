@@ -17,34 +17,34 @@ export default function Navbar() {
             <div className='navCenter'>
                 <ul className='navList'>
                     <li className='navListItem'>
-                        <Link className='link' to='/'>
+                        <Link className='navLink' to='/'>
                             Home
                         </Link>
                     </li>
                     <li className='navListItem'>
-                        <Link className='link' to='/guide'>
+                        <Link className='navLink' to='/guide'>
                             Guide
                         </Link>
                     </li>
                     <li className='navListItem'>
-                        <Link className='link' to='/quiz'>
+                        <Link className='navLink' to='/quiz'>
                             Quiz
                         </Link>
                     </li>
                     <li className='navListItem'>
-                        <Link className='link' to='/create'>
+                        <Link className='navLink' to='/create'>
                             Create
                         </Link>
                     </li>
                     <li className='navListItem'>
-                        <Link className='link' to='/about'>
+                        <Link className='navLink' to='/about'>
                             About
                         </Link>
                     </li>
                 </ul>
             </div>
             <div className='navRight'>
-                <li className='navListItem link' onClick={handleLogout}>
+                <li className='navListItem navLink' onClick={handleLogout}>
                     {user && 'Logout'}
                 </li>
                 {user ? (
@@ -54,12 +54,12 @@ export default function Navbar() {
                 ) : (
                     <ul className='navList'>
                         <li className='navListItem navListLogin'>
-                            <Link className='link' to='/login'>
+                            <Link className='navLink' to='/login'>
                                 Login
                             </Link>
                         </li>
                         <li className='navListItem navListRegister'>
-                            <Link className='link' to='/register'>
+                            <Link className='navLink' to='/register'>
                                 Register
                             </Link>
                         </li>

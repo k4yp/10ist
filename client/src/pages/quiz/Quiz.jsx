@@ -1,6 +1,6 @@
 import { Component } from 'react'
-import Question from '../../components/question/Question'
-import Answer from '../../components/answer/Answer'
+import Question from '../../components/quiz/Question'
+import Answer from '../../components/quiz/Answer'
 import './quiz.css'
 
 export default class Quiz extends Component {

@@ -9,7 +9,6 @@
     display: flex;
     align-items: center;
     font-family: 'Inconsolata', monospace;
-    color: white;
 }
 .navLeft,
 .navRight {
@@ -17,6 +16,42 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.navListItem {
+    margin-right: 5%;
+    font-size: 16px;
+    font-weight: 300;
+    cursor: pointer;
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    color: white;
+}
+.navListItem:hover {
+    color: lightgreen;
+}
+
+.navListItem:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: lightgreen;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.navListItem:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.navLink {
+    color: inherit;
+    text-decoration: none;
 }
 
 .navCenter {
@@ -75,19 +110,6 @@
     list-style: none;
 }
 
-.navListItem {
-    margin-right: 5%;
-    font-size: 16px;
-    font-weight: 300;
-    cursor: pointer;
-    list-style: none;
-    color: white;
-    transition: all 0.3s ease-out;
-}
-.navListItem:hover {
-    color: lightgreen;
-    transition: all 0.2s ease-in;
-}
 .navProfile {
     cursor: pointer;
     color: white;

@@ -9,12 +9,14 @@
     color: white;
     margin: 10px 25%;
     text-align: center;
+    transition: all 0.1s ease-out;
 }
 .Answers li:hover {
     cursor: pointer;
     text-decoration: underline;
     background-color: lightgreen;
     color: black;
+    transition: all 0.1s ease-in;
 }
 .Answers .correct {
     background-color: lightgreen;
