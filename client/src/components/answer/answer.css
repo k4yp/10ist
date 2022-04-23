@@ -7,22 +7,21 @@
     padding: 10px;
     background-color: #181a1b;
     color: white;
-    margin: 5px 20%;
+    margin: 10px 25%;
     text-align: center;
 }
 .Answers li:hover {
     cursor: pointer;
     text-decoration: underline;
-    color: lightgreen;
+    background-color: lightgreen;
+    color: black;
 }
 .Answers .correct {
     background-color: lightgreen;
-    text-decoration: underline;
+    color: black;
 }
 .Answers .incorrect {
     background-color: crimson;
-    color: white;
-    text-decoration: underline;
 }
 .Answers[disabled] {
     pointer-events: none;

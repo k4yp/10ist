@@ -68,7 +68,7 @@ export default class Quiz extends Component {
             <div className='Content'>
                 {step <= Object.keys(quiestions).length ? (
                     <>
-                        <Question question={quiestions[step]} />
+                        <Question question={`${step}. ${quiestions[step]}`} />
                         <Answer
                             answer={answers[step]}
                             step={step}
@@ -91,12 +91,10 @@ export default class Quiz extends Component {
                     </>
                 ) : (
                     <div className='finalPage'>
-                        <h1>You have completed the quiz!</h1>
+                        <h1>Quiz Completed</h1>
                         <p>
-                            Your score is: {score} of{' '}
-                            {Object.keys(quiestions).length}
+                            Your score is: {score} of {Object.keys(quiestions).length} ({Math.round(score/Object.keys(quiestions).length*100)}%)
                         </p>
-                        <p>Thank you!</p>
                     </div>
                 )}
             </div>

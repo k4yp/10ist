@@ -17,7 +17,7 @@ export default function About() {
                             } alt="linux desktop gif"/>
             <h2>About the website</h2>
             <p>
-                Pandex is a place to share screenshots and configurations of all your *nix desktops, themes or any other customisations
+                Pandex is a place to share screenshots and configurations of all your Linix desktops, themes or any other customisations
                 <br />
                 currently <a href='https://thepandex.herokuapp.com/'>live on heroku</a> (may or may not be working)
             </p>
