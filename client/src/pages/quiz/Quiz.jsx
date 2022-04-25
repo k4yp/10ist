@@ -125,7 +125,7 @@ export default class Quiz extends Component {
             <div className='Content'>
                 {step <= Object.keys(quiestions).length ? (
                     <>
-                        <Question question={`${step}. ${quiestions[step]}`} />
+                        <Question question={`${step}/10: ${quiestions[step]}`} />
                         <Answer
                             answer={answers[step]}
                             step={step}

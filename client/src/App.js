@@ -6,7 +6,6 @@ import Login from './pages/login/Login'
 import Settings from './pages/settings/Settings'
 import Register from './pages/register/Register'
 import Quiz from './pages/quiz/Quiz'
-import About from './pages/about/About'
 import Guide from './pages/guide/Guide'
 import ScrollToTop from './ScrollToTop'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
@@ -22,9 +21,6 @@ function App() {
             <Switch>
                 <Route exact path='/'>
                     <Home />
-                </Route>
-                <Route path='/about'>
-                    <About />
                 </Route>
                 <Route path='/guide'>
                     <Guide />

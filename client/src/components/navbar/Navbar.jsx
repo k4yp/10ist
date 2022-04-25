@@ -36,11 +36,6 @@ export default function Navbar() {
                             Create
                         </Link>
                     </li>
-                    <li className='navListItem'>
-                        <Link className='navLink' to='/about'>
-                            About
-                        </Link>
-                    </li>
                 </ul>
             </div>
             <div className='navRight'>
