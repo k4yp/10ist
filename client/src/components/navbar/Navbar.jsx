@@ -39,7 +39,11 @@ export default function Navbar() {
                 </ul>
             </div>
             <div className='navRight'>
-                <li className='navListItem navLink' onClick={handleLogout}>
+                <li
+                    className='navListItem navLink'
+                    style={{ color: 'white' }}
+                    onClick={handleLogout}
+                >
                     {user && 'Logout'}
                 </li>
                 {user ? (

@@ -26,6 +26,9 @@ export default function Home() {
             <div className='homeInfo'>
                 If your new to ricing you can check out the guide <Link className="homeLink" to='/guide'>here</Link>
             </div>
+            <div className='homeInfo'>
+                <b>Latest Posts</b>
+            </div>
             <div className='home'> 
                 <Posts posts={posts} />
             </div>

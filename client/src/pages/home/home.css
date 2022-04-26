@@ -1,12 +1,17 @@
 .home {
     display: flex;
-    padding: 0 200px 0 200px;
+    padding: 0 15% 0 15%;
 }
 .homeInfo {
-    stroke: black;
-    margin: 50px 15% 100px 15%;
+    margin: 50px 15% 10px 15%;
     font-size: 18px;
     text-align: center;
+}
+.homeBold {
+    font-weight: 800px;
+}
+.homeInfo b {
+    font-size: 32px;
 }
 .homeLink {
     color: dodgerblue;
