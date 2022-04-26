@@ -24,6 +24,13 @@ export default function guide() {
                         can really use any distribution many people lean towards
                         <a className ='guideLink' href='https://archlinux.org/'> Arch Linux</a> because of its high flexibility.
                     </p>
+                    <iframe
+                        src='https://www.youtube.com/embed/3WELZSF7wKQ'
+                        title='YouTube video player'
+                        frameborder='0'
+                        allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+                        allowfullscreen
+                    ></iframe>
                 <h3>What can I customise?</h3>
                     <p>Thankfully with Linux almost every aspect of the gui is customisable. There are many pre-made tools freely available to help you with this process</p>
                     <b>Desktop Environment (DE):</b> A desktop environment is a collection of programs bundled together to make a workspace. It comes with a window manager, a panel, a set of default programs (text editor, music player, etc.), a file manager, a terminal emulator, and many, many other things. Some commonly used are
@@ -50,10 +57,27 @@ export default function guide() {
                         <li><a className="guideLink" href="https://tools.suckless.org/dmenu/">Dmenu</a></li>
                         <li><a className="guideLink" href="https://github.com/DaveDavenport/rofi">Rofi</a></li>
                     </ul>
+                <h3>Where do I go from here?</h3>
+                    <p>
+                    If you don't know how to get started the best advice is to just go for it. There are many helpful tutorials on how to start ricing. Though it may seem overwhelming at first once you get the hang of it the possibilites are endless.<br/>
+                    <b>Below are some helpful tutorials.</b>
+                    </p>
                     <iframe
-                        width='100%'
-                        height='400px'
-                        src='https://www.youtube.com/embed/ng7mlrKRpmA'
+                        src='https://www.youtube.com/embed/gkI5KbzzrHA'
+                        title='YouTube video player'
+                        frameborder='0'
+                        allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+                        allowfullscreen
+                    ></iframe>
+                    <iframe
+                        src='https://www.youtube.com/embed/TutfIwxSE_s'
+                        title='YouTube video player'
+                        frameborder='0'
+                        allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+                        allowfullscreen
+                    ></iframe>
+                    <iframe
+                        src='https://www.youtube.com/embed/S1jQfGcKjtA'
                         title='YouTube video player'
                         frameborder='0'
                         allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
