@@ -9,7 +9,6 @@ _This was created for 10ist web design project_
 ### About the website
 
 Pandex is a place to share screenshots and configurations of all your \*nix desktops, themes or any other customisations  
-Currently [live on heroku](https://thepandex.herokuapp.com/) (may or may not be working)
 
 ### Technologies used
 

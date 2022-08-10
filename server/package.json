@@ -7,7 +7,7 @@
         "start": "node index.js",
         "dev": "nodemon index.js"
     },
-    "author": "aiden tubman",
+    "author": "k4yp",
     "license": "ISC",
     "dependencies": {
         "bcrypt": "^5.0.1",

@@ -6,7 +6,7 @@ export default function Footer() {
         <div className='footer'>
             pandex @{year}
             <br />
-            created by aiden tubman
+            created by k4yp
         </div>
     )
 }
