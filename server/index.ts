@@ -2,24 +2,20 @@ import express from 'express'
 import multer from 'multer'
 import path from 'path'
 import dotenv from 'dotenv'
+import mongoose from "mongoose"
 const app = express()
 const authRoute = require('./routes/auth')
 const usersRoute = require('./routes/users')
 const postsRoute  = require('./routes/posts')
 
-app.use(express.static(__dirname));
-
-
-
 dotenv.config()
 app.use(express.json())
 app.use('/images', express.static(path.join(__dirname, '/images')))
 
-const mongoose = require('mongoose')
-mongoose
-    .connect(process.env.MONGO_URL)
-    .then(console.log('Connected to MongoDB'))
+mongoose.connect(`${process.env.MONGO_URL}`)
     .catch((err: any) => console.log(err))
+
+console.log('Connected to MongoDB')
 
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
