@@ -3,7 +3,7 @@
 ![last commit](https://img.shields.io/github/last-commit/keyp0s/pandex?logo=GitHub)
 ![status](https://img.shields.io/github/deployments/keyp0s/pandex/thepandex?logo=Heroku)
 
-![home page](homepage.png)
+![home page](src/homepage.png)
 _This was created for 10ist web design project_
 
 ### About the website
@@ -39,5 +39,13 @@ Currently [live on heroku](https://thepandex.herokuapp.com/) (may or may not be 
 
 ### Setup
 
--   Clone the repository to your computer with `> git clone https://github.com/keyp0s/pandex.git`
--   Then go to the root folder and run `> (cd server && npm install) && (cd ..) && (cd client && npm install) && (cd ..)` to install the required packages
+-   Clone the repository to your computer with  
+    `> git clone https://github.com/keyp0s/pandex.git`
+-   Then go to the root folder and run  
+    `> (cd server && npm install) && (cd ..) && (cd client && npm install) && (cd ..)`  
+  to install the required packages  
+
+-   To start the server run   
+    `> (cd server && npm start)` 
+-   To start the client run  
+    `> (cd client && npm start)` 

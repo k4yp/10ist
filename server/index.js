@@ -36,7 +36,7 @@ app.use('/server/auth', authRoute)
 app.use('/server/users', usersRoute)
 app.use('/server/posts', postsRoute)
 
-const PORT = process.env.PORT || 5000
+const PORT = process.env.PORT || 5000 
 
 app.get('/', (req, res) => {
     res.send('server running')
