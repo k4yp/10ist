@@ -1,8 +1,8 @@
-const express = require('express')
+import express from 'express'
+import bcrypt from 'bcrypt'
 const router = express.Router()
 const User = require('../models/User')
 const Post = require('../models/Post')
-const bcrypt = require('bcrypt')
 
 //update a user
 router.put('/:id', async (req, res) => {

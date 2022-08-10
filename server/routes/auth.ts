@@ -1,9 +1,10 @@
-const router = require('express').Router()
+import express from 'express'
+import bcrypt from 'bcrypt'
+const router = express.Router()
 const User = require('../models/User')
-const bcrypt = require('bcrypt')
 
 //register a new user
-router.post('/register', async (req, res) => {
+router.post('/register', async (req: any, res: any) => {
     try {
         const salt = await bcrypt.genSalt(10)
         const hashedPass = await bcrypt.hash(req.body.password, salt)
@@ -20,7 +21,7 @@ router.post('/register', async (req, res) => {
 })
 
 //login to an existing user
-router.post('/login', async (req, res) => {
+router.post('/login', async (req: any, res: any) => {
     try {
         const user = await User.findOne({ username: req.body.username })
         if (!user) {
