@@ -4,7 +4,7 @@
 ![status](https://img.shields.io/github/deployments/keyp0s/pandex/thepandex?logo=Heroku)
 
 ![home page](src/homepage.png)
-_This was created for 10ist web design project_
+_This was created for the 10ist web design project_
 
 ### About the website
 
